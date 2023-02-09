@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.container{
+    position: absolute;
+    max-width: 90%;
+    height: 50vh;
+    margin: auto;
+    padding: 2% 5% 5% 5%;
+    top: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 20px;
+    /* From https://css.glass */
+        background: rgba(229, 223, 223, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.8px);
+        -webkit-backdrop-filter: blur(5.8px);
+        border: 1px solid rgba(229, 223, 223, 0.32);
+}
+.signUp {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.regForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 85vh;
+}
+
+.email{
+    margin-top: 5%;
+}
+.title{
+    margin-top: 25%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+label, input{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.regForm .email label, 
+.regForm .confirmEmail label, 
+.regForm .password label, 
+.regForm .confirmPassword label {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2%;
+  margin-left: 2.5%;
+}
+.regForm input[type="email"], 
+.regForm input[type="password"] {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    padding-left: 2%;
+    
+}
+.signUp{
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 3.5% 6% 3.5% 6%;
+    background-color: rgb(3, 74, 228);
+    border-radius: 10px;
+    margin-top: 5%;
+    
+}  
+input[type="text"], input[type="email"], input[type="password"] {
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+  }
+
+ 
